@@ -1,3 +1,20 @@
+/* Dark Mode Styling  */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #f4f4f4;
+        background-color: #333;
+    }
+
+    a {
+        color: #82aaff;
+    }
+
+    .container {
+        background-color: #444;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+}
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -44,6 +61,17 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Style the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    padding: 0;
+    height: 40px;
+
+}
+
 /* Add a container class for layout purposes */
 .container {
     max-width: 1200px;
@@ -51,20 +79,4 @@ a:hover {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-/* Dark Mode Styling  */
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #f4f4f4;
-        background-color: #333;
-    }
-
-    a {
-        color: #82aaff;
-    }
-
-    .container {
-        background-color: #444;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
 }
